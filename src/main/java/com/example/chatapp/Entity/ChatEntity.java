@@ -20,7 +20,4 @@ public class ChatEntity {
 
     @Column(name = "name")
     private String name;
-
-    @ManyToMany(cascade = CascadeType.PERSIST,fetch = FetchType.LAZY)
-    private Set<UserEntity> userEntities;
 }
