@@ -21,6 +21,6 @@ public class UserEntity {
     @Column(name = "name")
     private String name;
 
-    @ManyToMany(cascade = CascadeType.PERSIST,fetch = FetchType.LAZY)
-    private Set<ChatEntity> chatEntitySet;
+    @ManyToOne(cascade = CascadeType.PERSIST,fetch = FetchType.LAZY)
+    private ChatEntity chatEntity;
 }
